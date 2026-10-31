@@ -1,0 +1,41 @@
+{
+  "experiment": "dc_microgrid",
+  "software": "25.1.0.2943329 (R2025a)",
+  "platform": "PCWIN64",
+  "random_seed": 2026,
+  "scenario_seed": 9090,
+  "optimization_seed": 2030,
+  "sample_interval_s": 0.01,
+  "base_voltage_V": 48,
+  "prediction_horizon_steps": 2,
+  "training_raw_samples": 2200,
+  "validation_raw_samples": 1000,
+  "control_samples": 900,
+  "training_fit_samples": 2196,
+  "validation_fit_samples": 996,
+  "retained": 1963,
+  "pruned": 233,
+  "validation_rmse_by_mode": [
+    0.024945031348429583,
+    0.021865147718454086,
+    0.022389055045350891
+  ],
+  "gmvc": {
+    "IAE": 0.11846808861209858,
+    "ISE": 0.0046786667329373269,
+    "RMSE": 0.022800260069026811,
+    "MAXE": 0.12239009660407163
+  },
+  "mv": {
+    "IAE": 1.6439320632362351,
+    "ISE": 0.52043763110698893,
+    "RMSE": 0.24047121128387097,
+    "MAXE": 0.73604166507487179
+  },
+  "best_objective": 15.607902491809369,
+  "optimization_particles": 48,
+  "optimization_iterations": 65,
+  "confidence_display": "0.94 * scheduled segment belief + 0.06 * smoothed residual belief, then row normalized",
+  "residual_display": "Mode-labelled standardized residual projection with axis concentration and quantile rescaling; not raw physical residuals.",
+  "code_scope": "Core model-training, PSO implementation and controller routines are not included in the public package."
+}

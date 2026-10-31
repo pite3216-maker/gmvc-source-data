@@ -1,0 +1,68 @@
+{
+  "dual_model": {
+    "fit_samples": 1998,
+    "retained": 1717,
+    "pruned": 281,
+    "retention_ratio": 0.8593593593593594,
+    "injected_outliers": 4,
+    "injected_outliers_pruned": 4,
+    "control": {
+      "count": 1997,
+      "MAE": 0.05531418676324799,
+      "RMSE": 0.07136307211164439,
+      "MAXE": 0.9116191277788359
+    }
+  },
+  "microgrid": {
+    "gmvc": {
+      "count": 900,
+      "MAE": 0.01316312095690034,
+      "RMSE": 0.022800260069027013,
+      "MAXE": 0.12239009660410005,
+      "IAE": 0.11846808861210306,
+      "ISE": 0.004678666732937409
+    },
+    "mv": {
+      "count": 900,
+      "MAE": 0.1826591181373605,
+      "RMSE": 0.2404712112838709,
+      "MAXE": 0.7360416650749002,
+      "IAE": 1.6439320632362444,
+      "ISE": 0.5204376311069887
+    },
+    "reduction_vs_mv": {
+      "IAE": 0.927936140877448,
+      "ISE": 0.9910101298344132,
+      "RMSE": 0.9051850741413207,
+      "MAXE": 0.8337185210953438
+    },
+    "validation": [
+      {
+        "mode": 1,
+        "count": 331,
+        "MAE": 0.01933290021299086,
+        "RMSE": 0.024945031348428955,
+        "MAXE": 0.08509731012560451
+      },
+      {
+        "mode": 2,
+        "count": 335,
+        "MAE": 0.017571243962278875,
+        "RMSE": 0.0218651477184529,
+        "MAXE": 0.0818590479039969
+      },
+      {
+        "mode": 3,
+        "count": 330,
+        "MAE": 0.018152936001704985,
+        "RMSE": 0.02238905504535234,
+        "MAXE": 0.06254796847630217
+      }
+    ],
+    "training": {
+      "fit_samples": 2196,
+      "retained": 1963
+    }
+  },
+  "scope": "Metrics recomputed from deposited outputs; this script does not rerun model training, optimization, or closed-loop simulation."
+}

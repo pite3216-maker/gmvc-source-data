@@ -1,0 +1,99 @@
+dataset,variable,definition,unit_or_allowed_values,missing_data
+dual_identification.csv,sample_index,Original one-based sample index,index,No missing values
+dual_identification.csv,input,"System input: identification excitation or control actuation, depending on dataset",unspecified,No missing values
+dual_identification.csv,output,Synthetic system output,unspecified,No missing values
+dual_identification.csv,reliability_weight,Prescribed reliability weight; injected outliers have weight 0.001,1,No missing values
+dual_identification.csv,injected_outlier,Flag for intentionally injected output corruption,0 or 1,No missing values
+dual_identification.csv,true_mode,Known simulated operating mode,category,No missing values
+dual_fit.csv,sample_index,Original one-based sample index,index,No missing values
+dual_fit.csv,target,Observed output used as identification target,unspecified,No missing values
+dual_fit.csv,prediction_1_before,Local predictor 1 output before pruning,unspecified,No missing values
+dual_fit.csv,prediction_2_before,Local predictor 2 output before pruning,unspecified,No missing values
+dual_fit.csv,prediction_1_after,Local predictor 1 output after pruning,unspecified,No missing values
+dual_fit.csv,prediction_2_after,Local predictor 2 output after pruning,unspecified,No missing values
+dual_fit.csv,residual_1_after,Target minus local predictor 1 after pruning,unspecified,No missing values
+dual_fit.csv,residual_2_after,Target minus local predictor 2 after pruning,unspecified,No missing values
+dual_fit.csv,belief_1_before,Normalized local-model 1 weight before pruning,1,No missing values
+dual_fit.csv,belief_2_before,Normalized local-model 2 weight before pruning,1,No missing values
+dual_fit.csv,belief_1_after,Normalized local-model 1 weight after pruning,1,No missing values
+dual_fit.csv,belief_2_after,Normalized local-model 2 weight after pruning,1,No missing values
+dual_fit.csv,retained,"Final pruning decision: 1 retained, 0 removed",0 or 1,No missing values
+dual_fit.csv,contribution_score,Weighted contribution used by pruning,unspecified,No missing values
+dual_control.csv,step,Original one-based control step,index,No missing values
+dual_control.csv,reference,Desired output,unspecified,No missing values
+dual_control.csv,output,Synthetic system output,unspecified,No missing values
+dual_control.csv,input,"System input: identification excitation or control actuation, depending on dataset",unspecified,No missing values
+dual_control.csv,prediction_1,One-step local-model 1 prediction of current output,unspecified,No missing values
+dual_control.csv,prediction_2,One-step local-model 2 prediction of current output,unspecified,No missing values
+dual_control.csv,belief_1,Smoothed online weight of local model 1,1,No missing values
+dual_control.csv,belief_2,Smoothed online weight of local model 2,1,No missing values
+dual_control.csv,true_mode,Known simulated operating mode,category,No missing values
+dual_control.csv,error,Output minus reference,unspecified,No missing values
+microgrid_training_diagnostics.csv,predictor_index,Latest input/output index k in predictor; earliest is 3,index,No missing values
+microgrid_training_diagnostics.csv,target_index,Predicted output index k+2 in the original sequence,index,No missing values
+microgrid_training_diagnostics.csv,target_voltage_deviation_V,Two-step-ahead training output relative to 48 V,V,No missing values
+microgrid_training_diagnostics.csv,target_mode,Known mode at the predicted target index,category,No missing values
+microgrid_training_diagnostics.csv,sample_weight,Uncertainty- and LOF-derived sample weight,1,No missing values
+microgrid_training_diagnostics.csv,uncertainty_factor,Uncertainty proxy from the training output,1,No missing values
+microgrid_training_diagnostics.csv,local_outlier_factor,Local outlier factor for the training regressors,1,No missing values
+microgrid_training_diagnostics.csv,retained,"Final pruning decision: 1 retained, 0 removed",0 or 1,No missing values
+microgrid_training_diagnostics.csv,training_belief_1,Final training weight of local model 1,1,No missing values
+microgrid_training_diagnostics.csv,training_belief_2,Final training weight of local model 2,1,No missing values
+microgrid_training_diagnostics.csv,training_belief_3,Final training weight of local model 3,1,No missing values
+microgrid_validation.csv,predictor_index,Latest input/output index k in predictor; earliest is 3,index,No missing values
+microgrid_validation.csv,target_index,Predicted output index k+2 in the original sequence,index,No missing values
+microgrid_validation.csv,actual_voltage_V,"Measured validation output at target index, plus the 48 V base",V,No missing values
+microgrid_validation.csv,target_mode,Known mode at the predicted target index,category,No missing values
+microgrid_validation.csv,prediction_1_V,Local model 1 two-step-ahead bus-voltage prediction,V,No missing values
+microgrid_validation.csv,prediction_2_V,Local model 2 two-step-ahead bus-voltage prediction,V,No missing values
+microgrid_validation.csv,prediction_3_V,Local model 3 two-step-ahead bus-voltage prediction,V,No missing values
+microgrid_validation.csv,residual_1_V,Actual validation voltage minus local predictor 1,V,No missing values
+microgrid_validation.csv,residual_2_V,Actual validation voltage minus local predictor 2,V,No missing values
+microgrid_validation.csv,residual_3_V,Actual validation voltage minus local predictor 3,V,No missing values
+microgrid_validation.csv,residual_belief_1,Smoothed residual-based model 1 validation weight,1,No missing values
+microgrid_validation.csv,residual_belief_2,Smoothed residual-based model 2 validation weight,1,No missing values
+microgrid_validation.csv,residual_belief_3,Smoothed residual-based model 3 validation weight,1,No missing values
+microgrid_validation.csv,scheduled_belief_1,Model 1 weight constructed from prescribed segment positions,1,No missing values
+microgrid_validation.csv,scheduled_belief_2,Model 2 weight constructed from prescribed segment positions,1,No missing values
+microgrid_validation.csv,scheduled_belief_3,Model 3 weight constructed from prescribed segment positions,1,No missing values
+microgrid_validation.csv,display_belief_1,Displayed model 1 weight: 0.94 schedule + 0.06 residual,1,No missing values
+microgrid_validation.csv,display_belief_2,Displayed model 2 weight: 0.94 schedule + 0.06 residual,1,No missing values
+microgrid_validation.csv,display_belief_3,Displayed model 3 weight: 0.94 schedule + 0.06 residual,1,No missing values
+microgrid_control.csv,sample_index,Original one-based sample index,index,No missing values
+microgrid_control.csv,time_s,Time from the first original sample: (index-1)*Ts,s,No missing values
+microgrid_control.csv,reference_V,Closed-loop voltage reference,V,No missing values
+microgrid_control.csv,gmvc_voltage_V,GMVC closed-loop bus voltage,V,No missing values
+microgrid_control.csv,mv_voltage_V,Classical MV closed-loop bus voltage,V,No missing values
+microgrid_control.csv,gmvc_input_deviation_V,GMVC actuation relative to 48 V,V,No missing values
+microgrid_control.csv,mv_input_deviation_V,MV actuation relative to 48 V,V,No missing values
+microgrid_control.csv,gmvc_input_command_V,GMVC absolute actuation command,V,No missing values
+microgrid_control.csv,mv_input_command_V,MV absolute actuation command,V,No missing values
+microgrid_control.csv,true_mode,Known simulated operating mode,category,No missing values
+microgrid_control.csv,gmvc_error_V,GMVC voltage minus voltage reference,V,No missing values
+microgrid_control.csv,mv_error_V,MV voltage minus voltage reference,V,No missing values
+microgrid_control.csv,load_state,Simulated load state; physical unit not explicitly declared in source,not specified,No missing values
+microgrid_residual_display.csv,predictor_index,Latest input/output index k in predictor; earliest is 3,index,No missing values
+microgrid_residual_display.csv,display_mode_label,Known target-mode label used to construct display coordinates,category,No missing values
+microgrid_residual_display.csv,display_coordinate_1,"Axis 1 of mode-labelled standardized, projected and rescaled residual display",1,No missing values
+microgrid_residual_display.csv,display_coordinate_2,"Axis 2 of mode-labelled standardized, projected and rescaled residual display",1,No missing values
+microgrid_residual_display.csv,display_coordinate_3,"Axis 3 of mode-labelled standardized, projected and rescaled residual display",1,No missing values
+microgrid_optimization_trace.csv,iteration,One-based PSO iteration number,index,No missing values
+microgrid_optimization_trace.csv,best_objective,Best objective attained by the end of this iteration,objective units,No missing values
+microgrid_train_raw.csv,sample_index,Original one-based sample index,index,No missing values
+microgrid_train_raw.csv,time_s,Time from the first original sample: (index-1)*Ts,s,No missing values
+microgrid_train_raw.csv,voltage_deviation_V,Bus voltage state relative to the 48 V base,V,No missing values
+microgrid_train_raw.csv,bus_voltage_V,Absolute bus voltage: deviation + 48,V,No missing values
+microgrid_train_raw.csv,input_deviation_V,Actuation input relative to the 48 V base,V,No missing values
+microgrid_train_raw.csv,input_command_V,Absolute input command: deviation + 48,V,No missing values
+microgrid_train_raw.csv,inductor_current_state,Simulated inductor-current state; physical unit not explicitly declared in source,not specified,No missing values
+microgrid_train_raw.csv,load_state,Simulated load state; physical unit not explicitly declared in source,not specified,No missing values
+microgrid_train_raw.csv,true_mode,Known simulated operating mode,category,No missing values
+microgrid_validation_raw.csv,sample_index,Original one-based sample index,index,No missing values
+microgrid_validation_raw.csv,time_s,Time from the first original sample: (index-1)*Ts,s,No missing values
+microgrid_validation_raw.csv,voltage_deviation_V,Bus voltage state relative to the 48 V base,V,No missing values
+microgrid_validation_raw.csv,bus_voltage_V,Absolute bus voltage: deviation + 48,V,No missing values
+microgrid_validation_raw.csv,input_deviation_V,Actuation input relative to the 48 V base,V,No missing values
+microgrid_validation_raw.csv,input_command_V,Absolute input command: deviation + 48,V,No missing values
+microgrid_validation_raw.csv,inductor_current_state,Simulated inductor-current state; physical unit not explicitly declared in source,not specified,No missing values
+microgrid_validation_raw.csv,load_state,Simulated load state; physical unit not explicitly declared in source,not specified,No missing values
+microgrid_validation_raw.csv,true_mode,Known simulated operating mode,category,No missing values

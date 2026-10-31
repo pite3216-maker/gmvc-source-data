@@ -1,0 +1,13 @@
+# Local execution artifacts and private research implementation
+*.mat
+*.asv
+*.slx
+*.slxc
+*.log
+__pycache__/
+.DS_Store
+Thumbs.db
+private/
+tmp/
+slprj/
+node_modules/

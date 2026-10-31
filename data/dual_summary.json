@@ -1,0 +1,65 @@
+{
+  "experiment": "dual_model",
+  "software": "25.1.0.2943329 (R2025a)",
+  "platform": "PCWIN64",
+  "random_seed": 7,
+  "raw_samples": 2000,
+  "fit_samples": 1998,
+  "retained": 1717,
+  "pruned": 281,
+  "pruning_threshold": 0.022176545662426776,
+  "iteration_label_before": 26,
+  "iteration_label_after": 36,
+  "w_before": [
+    [
+      0.23519686673528298,
+      0.12183274448327025,
+      1.2871266121366594,
+      0.64044836765464608
+    ],
+    [
+      -0.19972238305462642,
+      0.19952615934307452,
+      0.76701609953490668,
+      0.30780743782883979
+    ]
+  ],
+  "w_after": [
+    [
+      0.23488391883816781,
+      0.12172110000110591,
+      1.2880681635294622,
+      0.64119198930573407
+    ],
+    [
+      -0.19958606094156606,
+      0.19940512449561376,
+      0.76799952322489906,
+      0.30733090350398523
+    ]
+  ],
+  "injected_outlier_indices": [
+    300,
+    700,
+    1300,
+    1700
+  ],
+  "pruned_outlier_indices": [
+    300,
+    700,
+    1300,
+    1700
+  ],
+  "residual_boundaries_unscaled": [
+    0.082538436721280847,
+    0.060444189647896093
+  ],
+  "boundary_display_scale": 3,
+  "control_RMSE": 0.07136307211164436,
+  "control_MAE": 0.055314186763247959,
+  "control_max_abs_error": 0.91161912777883591,
+  "control_evaluated_first_step": 3,
+  "control_evaluated_last_step": 1999,
+  "control_evaluated_count": 1997,
+  "metric_scope": "Only evaluated loop indices 3 through T-1; initialization and uncomputed terminal samples excluded."
+}

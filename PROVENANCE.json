@@ -1,0 +1,45 @@
+{
+  "version": "1.0.0",
+  "generated_date": "2026-10-31",
+  "journal": "International Journal of Systems Science",
+  "publication_status": "GitHub data deposit; no DOI or release identifier assigned.",
+  "source_runs": [
+    {
+      "experiment": "dual",
+      "source_filename": "ULSSVR_GMVC_enlarged_figures.m",
+      "sha256": "4c7d1c43f752e48c017e2950d8c96e4ce551b781e1ef0586924af9db8f1c308b",
+      "changes": "Export-only block inserted before local function definitions. Numerical algorithm and seeds unchanged."
+    },
+    {
+      "experiment": "microgrid",
+      "source_filename": "run_uncertain_GMVC_DC_microgrid_fixed.m",
+      "sha256": "2af1d8c7964a22c0f654eb5561192bb810531d636173a7e331eb288ce5940f5a",
+      "changes": "Export-only block inserted before local function definitions. Numerical algorithm and seeds unchanged."
+    }
+  ],
+  "software": "25.1.0.2943329 (R2025a)",
+  "platform": "PCWIN64",
+  "seeds": {
+    "dual": 7,
+    "microgrid": 2026,
+    "scenario": 9090,
+    "optimization": 2030
+  },
+  "numerical_changes": "None. Export statements inserted before local functions. Figures rendered invisibly.",
+  "dual_historical_log_check": "Counts, printed threshold, iteration labels and coefficients at four decimals match the saved log.",
+  "saved_figure_checks": {
+    "reference_figure": "figure13.pdf",
+    "comparison_method": "Saved vector-curve coordinates calibrated against the deposited reference-voltage trajectory; same affine vertical mapping used for both controllers.",
+    "tolerance_V": 0.0001,
+    "points_per_curve": 900,
+    "gmvc_max_abs_difference_V": 0.000003154234185842597,
+    "gmvc_rms_difference_V": 0.0000013146584420016334,
+    "mv_max_abs_difference_V": 0.000003211456103713317,
+    "mv_rms_difference_V": 0.0000012888238536899103,
+    "microgrid_control_match": true,
+    "dual_historical_log_match": true
+  },
+  "scope": "Deposited output data plus selected analysis and plotting scripts. Training, optimizer and controller implementations are retained locally.",
+  "units": "Dual-model signal units are not specified by the source. Microgrid voltage units are V; state/load units not explicitly declared are left unspecified.",
+  "repository_url": "https://github.com/pite3216-maker/gmvc-source-data"
+}
